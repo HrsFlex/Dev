@@ -1,0 +1,485 @@
+{% extends "base2.html" %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/videostyle.css'%}">
+{% block content %}
+
+
+<!-- What is Sun Strom and How It is Created  -->
+<div class="container12" style="background-color:#f1f1f1">
+  <div class="heading_container heading_center">
+      <h2 class="">
+         Sun<span> Storm</span>
+      </h2>
+  </div>
+
+  <div class="row">
+      <div class="column-661">
+          <h1 class="xlarge-font10"><b>What is sun storm ?</b></h1>
+          <h1 class="large-12" style="color:MediumSeaGreen;"><b> Disruption...</b></h1>
+          <p>
+            This is the core of the Sun, where nuclear fusion reactions take place continuously. Because of these reactions, charged particles are always moving, and the flow of these charged particles creates electric current. 
+            In physics, we know that the presence of electric current creates a magnetic field.
+            <span id="dots1">...</span> <span id="more1" style="display:none">
+               <br><br> In the beginning, the magnetic field lines of the Sun also travel from North to South, but due to the Sun's immense gravity, these magnetic lines twist and stretch within themselves, forming knots. These knots trap matter and create dark patches, which we scientifically call Sunspots. We can capture these Sunspots even with basic telescopes.
+                <br><br>Due to the cooling and condensing of the trapped matter, it turns into a plasma cloud. This plasma then rains down onto the surface of the Sun. However, sometimes, 
+                due to some disturbances, a part of the plasma separates from the Sun's magnetic field. These Sunspots, like a gun, 
+                shoot magnetized plasma clouds at the speed of light into the solar system. This only happens when the Sun reorganizes its magnetic
+                field and changes 
+                its polarity every 11 years.
+                <br><br>These solar flares spread throughout the solar system. Earth, being a habitable planet, 
+                feels their effects the most. The last time these solar flares hit was in 2014, and they might hit again in 2025. 
+                These flares can cause significant damage, and I’m even talking about massive destruction.</span>
+              <button onclick="myFunction1()" id="myBtn1" class="btn btn-link" style="border: none">Read more</button>
+          </p>
+      </div>
+      <div class="video-container" style="width: 400px; height: 300px; overflow: hidden; border-radius: 15px; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); position: relative; background-color: transparent; opacity: 0; transform: translateX(100%); transition: opacity 0.01s ease-in-out, transform 1s ease-in-out;">
+          <video controls style="width: 100%; height: 100%; border-radius: 15px; object-fit: cover;">
+              <source src="{% static 'images/create.mp4' %}" type="video/mp4">
+              Your browser does not support the video tag.
+          </video>
+      </div>
+  </div>
+</div>
+
+<script>
+  function myFunction1() {
+      var dots = document.getElementById("dots1");
+      var moreText = document.getElementById("more1");
+      var btnText = document.getElementById("myBtn1");
+  
+      if (dots.style.display === "none") {
+          dots.style.display = "inline";
+          btnText.innerHTML = "Read more"; 
+          moreText.style.display = "none";
+      } else {
+          dots.style.display = "none";
+          btnText.innerHTML = "Read less"; 
+          moreText.style.display = "inline";
+      }
+  }
+
+  // Slide in effect for the video with a slight delay for smooth interaction
+  window.onload = function() {
+      var videoContainer = document.querySelector('.video-container');
+      
+      // Use setTimeout to add a delay before starting the slide-in
+      setTimeout(function() {
+          videoContainer.style.opacity = 1;
+          videoContainer.style.transform = 'translateX(0)';
+      }, 3); // Adjust delay as needed (in milliseconds)
+  };
+</script>
+
+
+
+  
+  
+
+
+    <!-- Sun Strom Effect 1  start -->
+    
+
+
+    <div class="container12" style="background-color:#f1f1f1">
+        <div class="heading_container heading_center">
+            <h2 class="">
+               Effect Of <span>Sun Storm</span>
+            </h2>
+          </div>
+      
+        <div class="row">
+           
+    
+            <div class="column-661">
+                <h1 class="xlarge-font10"><b>Effects On Satellites </b></h1>
+                <h1 class="large-12" style="color:MediumSeaGreen;"><b> Disruption...</b></h1>
+                <p>
+                  As soon as these solar flares move toward Earth, they will first face Earth's magnetic field. The charged particles in these flares will collide at high speed with the satellites orbiting around Earth, damaging all the satellites. This could lead to satellite debris falling to Earth like rain.
+                  Normally, even a small piece of a satellite falling to Earth can release enough energy to destroy several regions at once.
+                    <span id="dots2">...</span> <span id="more2" style="display:none">
+                      But here, I’m talking about 5,500 satellites and millions of debris pieces orbiting around Earth. 
+                      So, it could literally be a rain of debris. We can imagine the devastating consequences of this happening.
+                    </span>
+                    <button onclick="myFunction2()" id="myBtn2" class="btn btn-link" style="border: none">Read more</button>
+                </p>
+               
+    
+                
+                
+            </div>
+            <div class="video-container" style="width: 400px; height: 300px; overflow: hidden; border-radius: 15px; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); position: relative; background-color: transparent;">
+                <video controls style="width: 100%; height: 100%; border-radius: 15px; object-fit: cover;">
+                    <source src="{% static 'images/stalite.mp4' %}" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+              
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        function myFunction2() {
+          var dots = document.getElementById("dots2");
+          var moreText = document.getElementById("more2");
+          var btnText = document.getElementById("myBtn2");
+        
+          if (dots.style.display === "none") {
+            dots.style.display = "inline";
+            btnText.innerHTML = "Read more"; 
+            moreText.style.display = "none";
+          } else {
+            dots.style.display = "none";
+            btnText.innerHTML = "Read less"; 
+            moreText.style.display = "inline";
+          }
+        }
+        </script>
+    
+    
+ <!-- Sun Strom Effect 1   end -->
+   <!-- Sun Strom Effect 2 start  -->
+    
+    
+  <div class="container12" style="background-color:#dfdfdfdf">
+   
+    <div class="row">
+        <div class="video-container" style="width: 400px; height: 300px; overflow: hidden; border-radius: 15px; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); position: relative; background-color: transparent;">
+            <video controls style="width: 100%; height: 100%; border-radius: 15px; object-fit: cover;">
+                <source src="{% static 'images/devices.mp4' %}" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="play-button" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 30px; color: white; display: none; cursor: pointer;">▶️</div>
+        </div>
+
+        <div class="column-661">
+            <h1 class="xlarge-font10"><b>Effect  Electric Devices And Transpotation</b></h1>
+            <h1 class="large-12" style="color:MediumSeaGreen;"><b> Disruption...</b></h1>
+            <p>
+              In this geomagnetic storm, the high-voltage current created will burn out all electronic devices and appliances, from small ones to big ones. If transmission towers stop working, there will be a power outage. The first impact of this power outage will be on public transportation and elevators, 
+              causing them to stop working completely. People who travel daily will be affected as all transportation systems will shut down.
+                <span id="dots3">...</span> <span id="more3" style="display:none">
+                  Just imagine how many emergency services will be affected. In a very bad scenario, 
+                  people could get trapped in elevators and may even die from suffocation. 
+                  This will also affect travel by private vehicles because people won't want to drive in such conditions.
+                   Traffic signals everywhere will stop working, creating chaos on the roads.</span>
+                <button onclick="myFunction3()" id="myBtn3" class="btn btn-link" style="border: none">Read more</button>
+            </p>
+           
+
+            
+            
+        </div>
+    </div>
+</div>
+
+<script>
+    function myFunction3() {
+      var dots = document.getElementById("dots3");
+      var moreText = document.getElementById("more3");
+      var btnText = document.getElementById("myBtn3");
+    
+      if (dots.style.display === "none") {
+        dots.style.display = "inline";
+        btnText.innerHTML = "Read more"; 
+        moreText.style.display = "none";
+      } else {
+        dots.style.display = "none";
+        btnText.innerHTML = "Read less"; 
+        moreText.style.display = "inline";
+      }
+    }
+    </script>
+ <!-- Sun Strom Effect 2 end  -->
+
+
+   <!-- Sun Strom Effect 3 start  -->
+
+   <div class="container12" style="background-color:#f1f1f1">
+    
+  
+    <div class="row">
+       
+
+        <div class="column-661">
+            <h1 class="xlarge-font10"><b>Effects On Living Things </b></h1>
+            <h1 class="large-12" style="color:MediumSeaGreen;"><b> Disruption...</b></h1>
+            <p>
+                As soon as these solar flares move toward Earth, they will first face Earth's magnetic field.
+                 The charged particles in these flares will collide at high speed with the satellites orbiting around Earth, damaging all the satellites. 
+                This could lead to satellite debris falling to Earth like rain.
+                <span id="dots4">...</span> <span id="more4" style="display:none">
+                    erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa.
+                     Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. 
+                     In at libero sed nunc venenatis imperdiet sed ornare turpis.
+                      Donec vitae dui eget tellus gravida venenatis. 
+                      Integer fringilla congue eros non fermentum.erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa.
+                      Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. 
+                      In at libero sed nunc venenatis imperdiet sed ornare turpis.
+                       Donec vitae dui eget tellus gravida venenatis. 
+                       Integer fringilla congue eros non fermentum.erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa.
+                       Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. 
+                       In at libero sed nunc venenatis imperdiet sed ornare turpis.
+                        Donec vitae dui eget tellus gravida venenatis. 
+                        Integer fringilla congue eros non fermentum.
+                        Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. 
+                          In at libero sed nunc venenatis imperdiet sed ornare turpis.
+                           Donec vitae dui eget tellus gravida venenatis. 
+                           Integer fringilla congue eros non fermentum.erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa.
+                           Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. 
+                           In at libero sed nunc venenatis imperdiet sed ornare turpis.
+                            Donec vitae dui eget tellus gravida venenatis.
+                            Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. 
+                          In at libero sed nunc venenatis imperdiet sed ornare turpis.
+                           Donec vitae dui eget tellus gravida venenatis. 
+                           Integer fringilla congue eros non fermentum.erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa.
+                           Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. 
+                           In at libero sed nunc venenatis imperdiet sed ornare turpis.
+                            Donec vitae dui eget tellus gravida venenatis.
+                       Sed dapibus pulvinar nibh tempor porta.</span>
+                <button onclick="myFunction4()" id="myBtn4" class="btn btn-link" style="border: none">Read more</button>
+            </p>
+           
+
+            
+            
+        </div>
+        <div class="video-container" style="width: 400px; height: 300px; overflow: hidden; border-radius: 15px; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); position: relative; background-color: transparent;">
+            <video controls style="width: 100%; height: 100%; border-radius: 15px; object-fit: cover;">
+                <source src="{% static 'images/living_things.mp4' %}" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+          
+        </div>
+    </div>
+</div>
+
+<script>
+    function myFunction4() {
+      var dots = document.getElementById("dots4");
+      var moreText = document.getElementById("more4");
+      var btnText = document.getElementById("myBtn4");
+    
+      if (dots.style.display === "none") {
+        dots.style.display = "inline";
+        btnText.innerHTML = "Read more"; 
+        moreText.style.display = "none";
+      } else {
+        dots.style.display = "none";
+        btnText.innerHTML = "Read less"; 
+        moreText.style.display = "inline";
+      }
+    }
+    </script>
+
+
+
+
+  
+     <!-- Sun Strom Effect 3 end  -->
+
+
+     <!-- Sun Strom Effect 4 start  -->
+     <div class="container12" style="background-color:#dfdfdfdf">
+   
+        <div class="row">
+            <div class="video-container" style="width: 400px; height: 300px; overflow: hidden; border-radius: 15px; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); position: relative; background-color: transparent;">
+                <video controls style="width: 100%; height: 100%; border-radius: 15px; object-fit: cover;">
+                    <source src="{% static 'images/GDP.mp4' %}" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="play-button" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 30px; color: white; display: none; cursor: pointer;">▶️</div>
+            </div>
+    
+            <div class="column-661">
+                <h1 class="xlarge-font10"><b>effects on GDP </b></h1>
+                <h1 class="large-12" style="color:MediumSeaGreen;"><b> Disruption...</b></h1>
+                <p>
+                    As soon as these solar flares move toward Earth, they will first face Earth's magnetic field.
+                     The charged particles in these flares will collide at high speed with the satellites orbiting around Earth, damaging all the satellites. 
+                    This could lead to satellite debris falling to Earth like rain.
+                    <span id="dots5">...</span> <span id="more5" style="display:none">
+                        erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa.
+                         Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. 
+                         In at libero sed nunc venenatis imperdiet sed ornare turpis.
+                          Donec vitae dui eget tellus gravida venenatis. 
+                          Integer fringilla congue eros non fermentum.erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa.
+                          Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. 
+                          In at libero sed nunc venenatis imperdiet sed ornare turpis.
+                           Donec vitae dui eget tellus gravida venenatis. 
+                           Integer fringilla congue eros non fermentum.erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa.
+                           Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. 
+                           In at libero sed nunc venenatis imperdiet sed ornare turpis.
+                            Donec vitae dui eget tellus gravida venenatis.
+                            Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. 
+                          In at libero sed nunc venenatis imperdiet sed ornare turpis.
+                           Donec vitae dui eget tellus gravida venenatis. 
+                           Integer fringilla congue eros non fermentum.erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa.
+                           Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. 
+                           In at libero sed nunc venenatis imperdiet sed ornare turpis.
+                            Donec vitae dui eget tellus gravida venenatis.
+                            Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. 
+                          In at libero sed nunc venenatis imperdiet sed ornare turpis.
+                           Donec vitae dui eget tellus gravida venenatis. 
+                           Integer fringilla congue eros non fermentum.erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa.
+                           Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. 
+                           In at libero sed nunc venenatis imperdiet sed ornare turpis.
+                            Donec vitae dui eget tellus gravida venenatis. 
+                            Integer fringilla congue eros non fermentum.
+                           Sed dapibus pulvinar nibh tempor porta.</span>
+                    <button onclick="myFunction5()" id="myBtn5" class="btn btn-link" style="border: none">Read more</button>
+                </p>
+               
+    
+                
+                
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        function myFunction5() {
+          var dots = document.getElementById("dots5");
+          var moreText = document.getElementById("more5");
+          var btnText = document.getElementById("myBtn5");
+        
+          if (dots.style.display === "none") {
+            dots.style.display = "inline";
+            btnText.innerHTML = "Read more"; 
+            moreText.style.display = "none";
+          } else {
+            dots.style.display = "none";
+            btnText.innerHTML = "Read less"; 
+            moreText.style.display = "inline";
+          }
+        }
+        </script>
+    
+    
+     <!-- Sun Strom Effect 4 end  -->
+
+
+     <!-- Sun Strom Effect 5 start  -->
+
+     <div class="container12" style="background-color:#f1f1f1">
+      
+      
+        <div class="row">
+           
+    
+            <div class="column-661">
+                <h1 class="xlarge-font10"><b>Satellite Operations</b></h1>
+                <h1 class="large-12" style="color:MediumSeaGreen;"><b> Disruption...</b></h1>
+                <p>
+                    As soon as these solar flares move toward Earth, they will first face Earth's magnetic field.
+                     The charged particles in these flares will collide at high speed with the satellites orbiting around Earth, damaging all the satellites. 
+                    This could lead to satellite debris falling to Earth like rain.
+                    <span id="dots6">...</span> <span id="more6" style="display:none">
+                        erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa.
+                         Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. 
+                         In at libero sed nunc venenatis imperdiet sed ornare turpis.
+                          Donec vitae dui eget tellus gravida venenatis. 
+                          Integer fringilla congue eros non fermentum.erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa.
+                          Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. 
+                          In at libero sed nunc venenatis imperdiet sed ornare turpis.
+                           Donec vitae dui eget tellus gravida venenatis. 
+                           Integer fringilla congue eros non fermentum.erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa.
+                           Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. 
+                           In at libero sed nunc venenatis imperdiet sed ornare turpis.
+                            Donec vitae dui eget tellus gravida venenatis.
+                            Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. 
+                          In at libero sed nunc venenatis imperdiet sed ornare turpis.
+                           Donec vitae dui eget tellus gravida venenatis. 
+                           Integer fringilla congue eros non fermentum.erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa.
+                           Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. 
+                           In at libero sed nunc venenatis imperdiet sed ornare turpis.
+                            Donec vitae dui eget tellus gravida venenatis.
+                            Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. 
+                          In at libero sed nunc venenatis imperdiet sed ornare turpis.
+                           Donec vitae dui eget tellus gravida venenatis. 
+                           Integer fringilla congue eros non fermentum.erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa.
+                           Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. 
+                           In at libero sed nunc venenatis imperdiet sed ornare turpis.
+                            Donec vitae dui eget tellus gravida venenatis. 
+                            Integer fringilla congue eros non fermentum.
+                           Sed dapibus pulvinar nibh tempor porta.</span>
+                    <button onclick="myFunction6()" id="myBtn6" class="btn btn-link" style="border: none">Read more</button>
+                </p>
+               
+    
+                
+                
+            </div>
+            <div class="video-container" style="width: 400px; height: 300px; overflow: hidden; border-radius: 15px; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); position: relative; background-color: transparent;">
+                <video controls style="width: 100%; height: 100%; border-radius: 15px; object-fit: cover;">
+                    <source src="{% static 'images/background.mp4' %}" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+              
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        function myFunction6() {
+          var dots = document.getElementById("dots6");
+          var moreText = document.getElementById("more6");
+          var btnText = document.getElementById("myBtn6");
+        
+          if (dots.style.display === "none") {
+            dots.style.display = "inline";
+            btnText.innerHTML = "Read more"; 
+            moreText.style.display = "none";
+          } else {
+            dots.style.display = "none";
+            btnText.innerHTML = "Read less"; 
+            moreText.style.display = "inline";
+          }
+        }
+        </script>
+    
+    
+    
+    
+      
+     <!-- Sun Strom Effect 5 end  -->
+    
+    
+    
+     
+     <div class="d-flex justify-content-center m-2">
+      <a   class="btn  mx-2" style="color:white; background-image: url('{% static 'images/bg2.jpeg' %}'); /* Path to your image */
+          background-size: cover;  /* Ensure the image covers the button */
+          background-position: center;  /* Center the image */
+          background-repeat: no-repeat; /* Prevent image repetition */">impact of 2024 May</a>
+      <a  href="{% url 'prediction' %}" class="btn  mx-2" style="color:white;background-image: url('{% static 'images/bg2.jpeg' %}'); /* Path to your image */
+          background-size: cover;  /* Ensure the image covers the button */
+          background-position: center;  /* Center the image */
+          background-repeat: no-repeat; /* Prevent image repetition */">2025 Prediction</a>
+     
+  </div>
+  <div class="container">
+    <a href="https://askstorm.streamlit.app" class="btn  mx-2 fixed-btn" style="
+          position: fixed;
+          bottom: 20px;
+          right: 20px;
+          z-index: 1000;
+          
+          color: white;
+          padding: 10px 20px;
+          border-radius: 5px;
+          box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+          text-decoration: none;
+          background-image: url('{% static 'images/bg2.jpeg' %}'); /* Path to your image */
+          background-size: cover;  /* Ensure the image covers the button */
+          background-position: center;  /* Center the image */
+          background-repeat: no-repeat; /* Prevent image repetition */
+          ">
+      Ask Solar Storm ?
+    </a>
+  </div>
+  
+  
+  
+  
+
+{% endblock content %}

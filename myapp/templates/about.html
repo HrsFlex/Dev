@@ -1,0 +1,225 @@
+{% extends "base2.html" %}
+{% load static %}
+{% block content %}
+
+<div class="video-background">
+  <video autoplay muted loop id="background-video">
+      <source src="{% static 'images/about.jpeg' %}" >
+      Your browser does not support the video tag.
+  </video>
+  
+</div>
+<section class="team_section layout_padding "  style="background-color:white">
+  <div class="container-fluid">
+    <div class="heading_container heading_center">
+      <h2 class="">
+         <span>Our Team</span>
+      </h2>
+    </div>
+
+    <div class="team_container">
+      <div class="row">
+        <div class="col-lg-3 col-sm-6">
+          <div class="box ">
+            <div class="img-box">
+              <img src="{% static 'images/t1.jpeg' %}" class="img1" alt="">
+            </div>
+            <div class="detail-box">
+              <h5>
+                Arya Shrivastva
+              </h5>
+              <p>
+                Team Leader
+              </p>
+            </div>
+            <div class="social_box">
+              <a href="#">
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+              </a>
+              <a href="#">
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+              </a>
+              <a href="#">
+                <i class="fa fa-linkedin" aria-hidden="true"></i>
+              </a>
+              <a href="#">
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+              </a>
+              <a href="#">
+                <i class="fa fa-youtube-play" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-6">
+          <div class="box ">
+            <div class="img-box">
+              <img src="{% static 'images/t2.jpeg' %}" class="img1" alt="">
+            </div>
+            <div class="detail-box">
+              <h5>
+                Yana Jain
+              </h5>
+              <p>
+                Development
+              </p>
+            </div>
+            <div class="social_box">
+              <a href="#">
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+              </a>
+              <a href="#">
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+              </a>
+              <a href="#">
+                <i class="fa fa-linkedin" aria-hidden="true"></i>
+              </a>
+              <a href="#">
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+              </a>
+              <a href="#">
+                <i class="fa fa-youtube-play" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-6">
+          <div class="box ">
+            <div class="img-box">
+              <img src="{% static 'images/t3.jpeg' %}" class="img1" alt="">
+            </div>
+            <div class="detail-box">
+              <h5>
+                Shruti Pachori
+              </h5>
+              <p>
+                Research&Development
+              </p>
+            </div>
+            <div class="social_box">
+              <a href="#">
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+              </a>
+              <a href="#">
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+              </a>
+              <a href="#">
+                <i class="fa fa-linkedin" aria-hidden="true"></i>
+              </a>
+              <a href="#">
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+              </a>
+              <a href="#">
+                <i class="fa fa-youtube-play" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-6">
+          <div class="box ">
+            <div class="img-box">
+              <img src="{% static 'images/t4.jpeg' %}" class="img1" alt="">
+            </div>
+            <div class="detail-box">
+              <h5>
+                Aadarsh Lodhi
+              </h5>
+              <p>
+               Development
+              </p>
+            </div>
+            <div class="social_box">
+              <a href="#">
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+              </a>
+              <a href="#">
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+              </a>
+              <a href="#">
+                <i class="fa fa-linkedin" aria-hidden="true"></i>
+              </a>
+              <a href="#">
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+              </a>
+              <a href="#">
+                <i class="fa fa-youtube-play" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {% comment %} new  {% endcomment %}
+      <div class="row justify-content-center">
+        <div class="col-lg-3 col-sm-6">
+          <div class="box ">
+            <div class="img-box">
+              <img src="{% static 'images/t5.jpeg' %}" class="img1" alt="">
+            </div>
+            <div class="detail-box">
+              <h5>
+                Sourabh Dhanger
+              </h5>
+              <p>
+                Research&Development
+              </p>
+            </div>
+            <div class="social_box">
+              <a href="#">
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+              </a>
+              <a href="#">
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+              </a>
+              <a href="#">
+                <i class="fa fa-linkedin" aria-hidden="true"></i>
+              </a>
+              <a href="#">
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+              </a>
+              <a href="#">
+                <i class="fa fa-youtube-play" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+        </div><div class="col-lg-3 col-sm-6">
+          <div class="box ">
+            <div class="img-box">
+              <img src="{% static 'images/t6.jpeg' %}" class="img1" alt="">
+            </div>
+            <div class="detail-box">
+              <h5>
+                Akshat Shrivastva
+              </h5>
+              <p>
+                Designer
+              </p>
+            </div>
+            <div class="social_box">
+              <a href="#">
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+              </a>
+              <a href="#">
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+              </a>
+              <a href="#">
+                <i class="fa fa-linkedin" aria-hidden="true"></i>
+              </a>
+              <a href="#">
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+              </a>
+              <a href="#">
+                <i class="fa fa-youtube-play" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+{% endblock content %}
+
+

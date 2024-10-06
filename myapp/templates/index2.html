@@ -1,0 +1,224 @@
+{% extends "index.html" %}
+{% load static %}
+
+{% block slider %}
+{% include "content/slider.html" %}
+{% endblock slider %}
+{% block content %}
+
+
+  <!-- end service section -->
+  
+  <!-- about section -->
+
+  <section class="about_section layout_padding">
+    <div class="container  ">
+      <div class="heading_container heading_center">
+        <h2>
+          About <span>Us</span>
+        </h2>
+        <p>
+          We are passionate about bringing the fascinating and powerful phenomenon of solar storms closer to you. Our innovative project allows you to experience solar storms like never before through cutting-edge technology, engaging content, and accessible tools.
+        </p>
+      </div>
+      <div class="row">
+        <div class="col-md-6 ">
+          <div class="img-box" style="border-radious:20px">
+            <img src="{% static 'images/s4.jpeg' %}" alt="">
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="detail-box">
+            <h3>
+              We Are STORM CHASERS
+            </h3>
+            <p>
+              We offer a variety of services to enhance learning and exploration of solar storms:
+
+
+            </p>
+            <p>
+              <ol> Animation Videos: High-quality simulations that bring solar storms to life.
+              </ol>
+              <ol>Accessible Platforms: User-friendly tools for all skill levels to explore solar storms.</ol>
+              
+              <ol>Educational Tools: Simple, enjoyable resources for learners at every stage.</ol>
+              <ol>Data Security: Prioritizing user data protection.</ol>
+              <ol>Inclusivity: Accessible and adaptable content for all devices and needs.</ol>
+
+              <ol>Multilingual Services: Breaking language barriers to reach a global audience.</ol>
+
+            
+              Our mission is to make solar storms accessible and engaging, transforming them from distant space events into vivid experiences for everyone.
+            </p>
+            <a href="https://science.nasa.gov/sun/solar-storms-and-flares/">
+            
+              Read More
+            </a>
+            <a href="https://svs.gsfc.nasa.gov/4244/"> More About Impact</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end about section -->
+
+  <!-- why section -->
+
+  
+
+  <!-- end why section -->
+  <section class="service_section layout_padding">
+    <div class="service_container">
+      <div class="container ">
+        <div class="heading_container heading_center">
+          <h2>
+            Our <span>Services</span>
+          </h2>
+          <p>
+            With our innovative project, you can experience Solar Storms like never before!
+          </p>
+        </div>
+        <div class="row">
+          <div class="col-md-4 ">
+            <div class="box ">
+              <div class="img-box">
+                <img src="{% static 'images/logo/1.png' %}" alt="">
+              </div>
+              <div class="detail-box">
+                <h5>
+                  3D ANIMATION VIDEO
+                </h5>
+                <p>
+                    We provides easy-to-understand 3D animation videos about sun storms,
+                   explaining their causes, effects, and impact on Earth. 
+                   engaging content makes solar phenomena accessible to everyone, promoting awareness and education
+                </p>
+                <a href="">
+                  Read More
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 ">
+            <div class="box ">
+              <div class="img-box">
+                <img src="{% static 'images/logo/6.jpg' %}" alt="">
+              </div>
+              <div class="detail-box">
+                <h5>
+                  EASILY ACCESSIBLE
+                </h5>
+                <p>
+                  Discover easily accessible solar storm information with real-time updates, 
+                  detailed insights, and interactive animations.
+                  Stay informed about sun activity and its impact on Earth, anytime,anywhere.
+                </p>
+                <a href="">
+                  Read More
+                </a>
+              </div>
+            </div>
+          </div>          
+          <div class="col-md-4 ">
+            <div class="box ">
+              <div class="img-box">
+                <img src="{% static 'images/logo/easy.jpg' %}" alt="">
+              </div>
+              <div class="detail-box">
+                <h5>
+                  DESIGNED TO MAKE LEARNING EASY
+                </h5>
+                <p>
+                  Our services offer easy-to-understand, interactive 3D animations, 
+                  simplifying complex solar storm data and space weather
+                   concepts to make learning engaging and accessible for everyone
+                </p>
+                <a href="">
+                  Read More
+                </a>
+              </div>
+            </div>
+          </div>      
+          
+  
+  
+  
+  
+        </div>
+        <div class="btn-box">
+          <a href="{% url 'service' %}">
+            View All
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- team section -->
+  
+
+
+  <!-- client section -->
+
+
+
+  <div class="heading_container heading_center">
+    <h2 >
+      Solar Quries<span> Queries</span>
+    </h2>
+  </div>
+    <button class="accordion">What is a solar storm, and how does it affect Earth's magnetic field?</button>
+    <div class="panel">
+        <p>A solar storm is a huge release of energy from the Sun, usually caused by a sunspot or solar flare.
+           It sends a blast of charged particles (like electrons and protons) hurtling through space.</p>
+    </div>
+    <button class="accordion">How are solar flares and coronal mass ejections related to solar storms?</button>
+    <div class="panel">
+        <p>both solar flares and CMEs contribute to solar storms, but they do so in different ways.
+           Flares release energy quickly, while CMEs are large eruptions that take longer to reach us.</p>
+    </div>
+    <button class="accordion">What are the potential impacts of solar storms on Earth's technology and infrastructure?</button>
+    <div class="panel">
+        <p>Solar storms can disrupt satellites, affecting communication and navigation. They can cause power grid failures by creating harmful currents. Additionally, they may lead
+           to radio communication issues and increased radiation exposure for astronauts and high-altitude flights.</p>
+    </div>
+    <button class="accordion">How do solar storms affect satellite communications and GPS systems?</button>
+    <div class="panel">
+        <p>Solar storms can create interference that disrupts satellite signals, leading to dropped calls and poor data connections. For GPS systems, solar activity can cause inaccuracies in location readings.
+           This can affect navigation for both everyday users and critical services like aviation.</p>
+    </div> <button class="accordion">What is the role of the Sun's magnetic field in the occurrence of solar storms?</button>
+    <div class="panel">
+        <p>Solar storms can influence Earth's climate and weather by affecting the upper atmosphere and altering atmospheric currents. When charged particles from solar storms interact with the Earth's magnetic field, they can create changes in weather patterns. 
+          While the effects are generally small, they can still contribute to variations in climate over time.</p>
+    </div> <button class="accordion">How can solar storms influence Earth's climate and weather patterns?</button>
+    <div class="panel">
+        <p>To predict solar storms, scientists use satellites and ground-based observatories to monitor the Sun's activity. They analyze data to provide early warnings of potential storms. To mitigate effects, power companies and satellite operators have plans 
+          in place to protect their systems, such as temporarily shutting down equipment during severe storms.</p>
+    </div> <button class="accordion">What measures are in place to predict and mitigate the effects of solar storms?</button>
+    <div class="panel">
+        <p>The Sun's magnetic field plays a crucial role in solar storms by controlling the flow of charged particles on the Sun's surface. When magnetic lines become twisted or tangled, they can release energy, causing solar flares or
+           coronal mass ejections. These eruptions then travel towards Earth, potentially leading to solar storms.</p>
+    </div> <button class="accordion">How do solar storms impact astronauts and space missions?</button>
+    <div class="panel">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates adipisci deserunt asperiores delectus
+            repellat magni!</p>
+    </div>
+    <script>var acc = document.getElementsByClassName("accordion");
+      var i;
+      
+      for (i = 0; i < acc.length; i++) {
+          acc[i].addEventListener("click", function () {
+              this.classList.toggle("active");
+              var panel = this.nextElementSibling;
+              if (panel.style.maxHeight) {
+                  panel.style.maxHeight = null;
+              } else {
+                  panel.style.maxHeight = panel.scrollHeight + "px";
+              }
+          });
+      }</script>
+
+  
+{% endblock content %}

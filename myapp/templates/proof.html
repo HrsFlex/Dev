@@ -1,0 +1,121 @@
+{% extends "base2.html" %}
+{% load static %}
+{% block content %}
+
+<!-- Proof 1 start -->
+
+<div class="container12" style="background-color:#f1f1f1">
+    <div class="heading_container heading_center">
+        <h2 class="">
+           Solar flares <span>Prediction</span>
+        </h2>
+    </div>
+
+    <div class="row">
+        <div class="column-661">
+            <h1 class="xlarge-font10"><b>Predicted Solar flares </b></h1>
+            <h1 class="large-12" style="color:MediumSeaGreen;"><b>in 2024</b></h1>
+            <p>
+                The time series plot labeled "Predicted Solar Flares in 2024" presents an analysis of solar flare activity over time, with the X-axis representing dates from approximately 2000 to around 2018 and the Y-axis indicating the predicted number of solar flares, with values reaching over 4000.
+                <br><br>
+                The graph displays numerous spikes, which highlight the fluctuating intensity and frequency of predicted solar flares during this period. This cyclical pattern reveals that solar flare activity varies significantly, with periods of heightened intensity followed by quieter phases, rather than 
+                showing a consistent upward or downward trend. 
+                <span id="dots2">...</span> 
+                <span id="more2" style="display:none">
+                  <br><br> Notably, while the title references predictions for 2024, the data concludes around 2018, indicating that these predictions are derived from historical data.
+                  Overall, this plot serves as a predictive model for solar flare occurrences, suggesting that similar activity levels may be expected in the future based on observed trends.
+                </span>
+                <button onclick="myFunction2()" id="myBtn2" class="btn btn-link" style="border: none">Read more</button>
+            </p>
+        </div>
+
+        <!-- Image container with animation -->
+        <div class="video-container" style="width: 400px; height: 300px; overflow: hidden; border-radius: 15px; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); position: relative; background-color: transparent;">
+            <img id="animatedImage" src="{% static 'images/g1.jpeg' %}" alt="" 
+                style="position: absolute; bottom: -100%; transition: bottom 0.001s ease-in-out;">
+        </div>
+    </div>
+</div>
+
+<script>
+    // Function to smoothly animate image upwards
+    window.onload = function() {
+        var img = document.getElementById("animatedImage");
+        setTimeout(function() {
+            img.style.bottom = '0'; // Move the image upwards to its intended position
+        }, 10); // Small delay to ensure the transition happens smoothly
+    };
+
+    function myFunction2() {
+        var dots = document.getElementById("dots2");
+        var moreText = document.getElementById("more2");
+        var btnText = document.getElementById("myBtn2");
+
+        if (dots.style.display === "none") {
+            dots.style.display = "inline";
+            btnText.innerHTML = "Read more"; 
+            moreText.style.display = "none";
+        } else {
+            dots.style.display = "none";
+            btnText.innerHTML = "Read less"; 
+            moreText.style.display = "inline";
+        }
+    }
+</script>
+
+
+<!-- Proof 1 end -->
+ <!-- Proof 2 start -->
+
+
+
+
+<div class="container12" style="background-color:#dfdfdfdf">
+   
+    <div class="row">
+        <div class="video-container" style="width: 400px; height: 300px; overflow: hidden; border-radius: 15px; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); position: relative; background-color: transparent;">
+           <img src="{% static 'images/g2.jpeg' %}" alt="">
+        </div>
+
+        <div class="column-661">
+            <h1 class="xlarge-font10"><b>Predicted Solar Storm Dates</b></h1>
+            <h1 class="large-12" style="color:MediumSeaGreen;"><b> In January 2024</b></h1>
+            <p>
+                The time series plot labeled "Predicted Solar Flares in 2024" provides an analysis of solar flare activity over time.
+                 The X-axis represents dates but appears to cover only early January 2024, lacking a clear range.
+                  The Y-axis is designed to indicate predicted solar storm intensity or occurrences; however, the values remain around zero, rendering the data uninformative.
+                  
+                <span id="dots3">...</span> <span id="more3" style="display:none">
+                    <br> <br>
+                    The graph lacks data points, patterns, or visible spikes, resulting in a mostly empty visualization apart from a small legend that suggests it was intended to display "Predicted Solar Storm" data.
+                    This absence of significant data indicates that no notable solar storms were predicted for January 2024, pointing to a period of low solar activity during that timeframe.</span>
+                <button onclick="myFunction3()" id="myBtn3" class="btn btn-link" style="border: none">Read more</button>
+            </p>
+           
+
+            
+            
+        </div>
+    </div>
+</div>
+
+<script>
+    function myFunction3() {
+      var dots = document.getElementById("dots3");
+      var moreText = document.getElementById("more3");
+      var btnText = document.getElementById("myBtn3");
+    
+      if (dots.style.display === "none") {
+        dots.style.display = "inline";
+        btnText.innerHTML = "Read more"; 
+        moreText.style.display = "none";
+      } else {
+        dots.style.display = "none";
+        btnText.innerHTML = "Read less"; 
+        moreText.style.display = "inline";
+      }
+    }
+    </script>
+<!-- Proof 2 end -->
+
+{% endblock content %}

@@ -1,0 +1,52 @@
+{% extends "base2.html" %}
+{% load static %}
+{% block content %}
+<div class="container12" style="background-color:#f1f1f1">
+    <div class="heading_container heading_center">
+        <h2 class="">
+          Additional Features By<span>STORM CHASERS </span>
+        </h2>
+        <br> <br>
+      </div>
+  
+    <div class="row">
+       
+
+        <div class="col">
+            <h4 class="xlarge-font10"><b>STORM CHASERS OFFERS YOU </b><span style="color:#00bbf0">SOLAR FLARE EXPLORER </span></h4>
+            <h2 class="large-12" style="color:MediumSeaGreen;"><b></b></h2>
+            
+  <br>
+            <div class="d-flex justify-content-center m-2">
+                <a  href="https://rtsolarflare.streamlit.app/"  class="btn  mx-2" style="color:white; background-image: url('{% static 'images/bg2.jpeg' %}'); /* Path to your image */
+                    background-size: cover;  /* Ensure the image covers the button */
+                    background-position: center;  /* Center the image */
+                    background-repeat: no-repeat; /* Prevent image repetition */">Open Me</a>
+                
+               
+            </div>
+            
+        </div>
+        <div class="col">
+            <h4 class="xlarge-font10"><b>Surprise for you !      </b><span style="color:#00bbf0">  NASA PHOTO OF THE DAY</span></h4>
+            <h2 class="large-12" style="color:MediumSeaGreen;"><b></b></h2>
+            <br>
+            <div class="d-flex justify-content-center m-2">
+                <a    href="https://snapshots.streamlit.app/" class="btn  mx-2" style="color:white; background-image: url('{% static 'images/bg2.jpeg' %}'); /* Path to your image */
+                    background-size: cover;  /* Ensure the image covers the button */
+                    background-position: center;  /* Center the image */
+                    background-repeat: no-repeat; /* Prevent image repetition */">Open Me</a>
+               
+               
+            </div>
+            
+            
+        </div>
+        
+    </div>
+</div>
+
+
+    
+
+{% endblock content %}

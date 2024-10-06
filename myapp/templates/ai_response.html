@@ -1,0 +1,6 @@
+{% extends "base2.html" %}
+{% block content %}
+
+<p>AI Response: {{ response }}</p>
+<a href="{% url 'ai_input' %}">Try Again</a>
+{% endblock content %}

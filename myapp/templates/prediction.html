@@ -1,0 +1,65 @@
+{% extends "base2.html" %}
+{% load static %}
+{% block content %}
+<div class="container12" style="background-color:#f1f1f1">
+    <div class="heading_container heading_center">
+        <h2 class="">
+           Prediction  <span> Of 2025</span>
+        </h2>
+      </div>
+  
+    <div class="row">
+       
+
+        <div class="column-661">
+            <h1 class="xlarge-font10"><b>Predicted Graph Of impact in 2025</b></h1>
+            <h1 class="large-12" style="color:MediumSeaGreen;"><b> Disruption...</b></h1>
+            <p>
+              This is the core of the Sun, where nuclear fusion reactions take place continuously. Because of these reactions, charged particles are always moving, and the flow of these charged particles creates electric current. 
+              In physics, we know that the presence of electric current creates a magnetic field.
+                <span id="dots1">...</span> <span id="more1" style="display:none">
+                 <br><br> In the beginning, the magnetic field lines of the Sun also travel from North to South, but due to the Sun's immense gravity, these magnetic lines twist and stretch within themselves, forming knots. These knots trap matter and create dark patches, which we scientifically call Sunspots. We can capture these Sunspots even with basic telescopes.
+
+                  
+                  <br><br>These solar flares spread throughout the solar system. Earth, being a habitable planet, 
+                  feels their effects the most. The last time these solar flares hit was in 2014, and they might hit again in 2025. 
+                  These flares can cause significant damage, and I’m even talking about massive destruction.</span>
+                <button onclick="myFunction1()" id="myBtn1" class="btn btn-link" style="border: none">Read more</button>
+            </p>
+           
+
+            
+            
+        </div>
+        <div class="video-container" style="width: 400px; height: 300px; overflow: hidden; border-radius: 15px; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); position: relative; background-color: transparent;">
+           <img src="{% static 'images/graph.png' %}" alt="">
+          
+        </div>
+    </div>
+</div>
+
+<script>
+    function myFunction1() {
+      var dots = document.getElementById("dots1");
+      var moreText = document.getElementById("more1");
+      var btnText = document.getElementById("myBtn1");
+    
+      if (dots.style.display === "none") {
+        dots.style.display = "inline";
+        btnText.innerHTML = "Read more"; 
+        moreText.style.display = "none";
+      } else {
+        dots.style.display = "none";
+        btnText.innerHTML = "Read less"; 
+        moreText.style.display = "inline";
+      }
+    }
+    </script>
+
+    <div class="d-flex justify-content-center m-2">
+      <a   href="{% url 'proof' %}"  class="btn btn-primary mx-2" style="color:white">why you Belief ?</a>
+      
+     
+  </div>
+
+{% endblock content %}

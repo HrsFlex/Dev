@@ -1,0 +1,36 @@
+.video-container {
+    width: 1000px; /* Set a fixed width for the container */
+    height: 300px; /* Set a fixed height for the container */
+    overflow: hidden; /* Ensure anything outside is hidden */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Shadow for depth */
+    position: relative; /* Allows positioning of play button overlay */
+    background-color: black; /* Background color when video is loading */
+}
+
+.video-container video {
+    width: 100%; /* Full width of container */
+    height: 100%; /* Full height of container */
+    border-radius: 15px; /* Rounded corners for the video */
+    object-fit: cover; /* Maintain aspect ratio and cover the area */
+}
+
+.play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+    color: white;
+    display: none; /* Initially hidden */
+    cursor: pointer;
+}
+
+.video-container:hover .play-button {
+    display: block; /* Show play button on hover */
+}
+@media only screen and (min-width: 600px) {
+    video{
+        width:auto;
+    }
+}
